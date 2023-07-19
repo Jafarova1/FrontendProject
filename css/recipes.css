@@ -195,14 +195,11 @@ a{
     margin-top: 50px;
 }
 .items a{
-    color: #1f1f1f;
+    color: white;
     text-align: center;
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
+
     border-radius: 50%;
-    border: 1px solid #e6e6e6;
+
 }
 .items li{
     display: inline-block;
