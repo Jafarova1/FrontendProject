@@ -184,6 +184,7 @@ a {
 }
 .menu-item p{
     margin-left: 10px;
+    font-family: 'Playfair Display', serif;
 }
 .title{
     margin-left: 10px;
@@ -191,10 +192,12 @@ a {
 }
 .title h4{
     font-family: 'Spectral', sans-serif;
+    
 }
 .line{
     flex-grow: 1;
-    border-bottom: 1px solid #eacaaf;
+    border-bottom: 1px solid hotpink;
     position: relative;
-    top: 3px;
+    bottom: 21px;
+    width: 140px;
 }
