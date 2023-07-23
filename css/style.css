@@ -1,16 +1,19 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-li{
+
+li {
     list-style: none;
 }
-a{
+
+a {
     color: white;
     text-decoration: none;
 }
-.navbar{
+
+.navbar {
     min-height: 70px;
     display: flex;
     justify-content: space-between;
@@ -18,29 +21,35 @@ a{
     padding: 0 24px;
 
 }
-.nav-menu{
+
+.nav-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 }
-.story{
+
+.story {
     font-size: 2rem;
 }
-.nav-link{
-    transition:  0.3s ease;
-    color: black ;
+
+.nav-link {
+    transition: 0.3s ease;
+    color: black;
     font-weight: 500;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.nav-link:hover{
+
+.nav-link:hover {
     color: hotpink
 }
-.hamburger{
+
+.hamburger {
     display: none;
     cursor: pointer;
 }
-.bar{
+
+.bar {
     display: block;
     width: 25px;
     height: 3px;
@@ -50,44 +59,52 @@ a{
     background-color: palevioletred
 }
 
-@media(max-width:768px){
-    .hamburger{
+@media(max-width:768px) {
+    .hamburger {
         display: block;
-        
+
     }
-    .hamburger.active .bar:nth-child(2){
+
+    .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
-    .hamburger.active .bar:nth-child(1){
+
+    .hamburger.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
-    .hamburger.active .bar:nth-child(3){
+
+    .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-    .nav-menu{
+
+    .nav-menu {
         position: fixed;
         left: -100%;
         top: 70px;
         gap: 0;
         flex-direction: column;
-       background-image: linear-gradient(to right, #ff6e7f, #bfe9ff);
+        background-image: linear-gradient(to right, #ff6e7f, #bfe9ff);
         width: 100%;
         text-align: center;
         transition: 0.3s;
 
 
     }
-    .nav-item{
+
+    .nav-item {
         margin: 16px 0;
     }
-    .nav-menu.active{
+
+    .nav-menu.active {
         left: 0;
     }
 }
-.dot{
+
+.dot {
     color: hotpink;
-    font-family:MV Boli;
+    font-family: MV Boli;
 }
+
 /* .slider{
     position: relative;
     height: auto;
@@ -96,13 +113,14 @@ a{
 } */
 
 
-.slider .text{
+.slider .text {
     width: 34%;
     background: #ffd615;
     height: 680px;
     z-index: 1;
 }
-.slider .img{
+
+.slider .img {
     width: 66%;
     height: 680px;
     z-index: -1;
@@ -110,17 +128,20 @@ a{
     background-repeat: no-repeat;
     background-position: center center;
 }
-.slider{
+
+.slider {
     height: 680px;
 }
- .slider-item{
+
+.slider-item {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     height: 680px;
     position: relative;
     z-index: 0;
-} 
+}
+
 .right h3 {
     font-size: 16px;
     font-weight: 400;
@@ -129,6 +150,7 @@ a{
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+
 .right h1 {
     font-size: 48px;
     color: #000000;
@@ -137,13 +159,15 @@ a{
     position: relative;
     font-family: "Poppins", Arial, sans-serif;
 }
-.right{
+
+.right {
     position: relative;
     height: 563px;
     top: 0px;
 
 }
-.text{
+
+.text {
     margin-left: 750px;
     height: 680px;
     background-size: cover;
@@ -154,80 +178,87 @@ a{
     bottom: 680px;
 }
 
-.right p{
+.right p {
     font-size: 18px;
     line-height: 1.5;
     font-weight: 500;
     color: rgba(0, 0, 0, 0.5);
 }
-.btn{
+
+.btn {
     background: #000000 !important;
     border: 1px solid #000000 !important;
     color: #fff !important;
 }
-.slider .full-content{
+
+.slider .full-content {
     display: none;
     margin-top: -27px;
 
 }
 
-.container{
+.container {
     max-width: 1200px;
 }
 
-  
-@media(max-width:1100px){
-    .slider .img{
+
+@media(max-width:1100px) {
+    .slider .img {
         width: 100%;
     }
 
 
-    .slider .text{
+    .slider .text {
         width: 34%;
         background-color: transparent;
         height: 680px;
         z-index: 1;
         margin-left: 160px;
-     
+
     }
 
-    .right h1{
+    .right h1 {
         color: white;
     }
-    .right h3{
+
+    .right h3 {
         color: white;
     }
-    .right p{
+
+    .right p {
         color: white;
 
-      
+
 
     }
 
-    .text{
+    .text {
         margin-top: -30px;
     }
 
     .slider-item {
         background-position: center center !important;
     }
-    .btn{
-        background-color:#ffd615;
+
+    .btn {
+        background-color: #ffd615;
         color: white;
     }
 
 
 }
 
-.board{
+.board {
     margin-top: 100px;
 }
-.board h1{
-color: #ff6e7f;
-border-bottom: 1px solid beige;
+
+.board h1 {
+    color: #ff6e7f;
+    border-bottom: 1px solid beige;
 
 }
-.subheading span{
+
+.subheading span {
     color: #f67979;
     position: relative;
     line-height: 1;
@@ -235,32 +266,38 @@ border-bottom: 1px solid beige;
     font-size: 50px;
     font-weight: normal;
 }
-.board p{
+
+.board p {
     font-weight: 400;
     color: #999999;
     font-size: 16px;
     line-height: 2;
 
 }
-.board img{
-width: 100%;
-height: 100%;
-position: relative;
-background-size: cover;
+
+.board img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
-.board .recipes .menu{
-width: 100%;
+
+.board .recipes .menu {
+    width: 100%;
 }
-.recipes .menu h5{
+
+.recipes .menu h5 {
     color: #999999;
 }
-.recipes .menu h5:hover{
+
+.recipes .menu h5:hover {
     color: #ff6e7f;
     transition: all 0.5s;
 }
-.board h3{
+
+.board h3 {
     color: #f67979;
     position: relative;
     line-height: 1;
@@ -268,7 +305,8 @@ width: 100%;
     font-size: 50px;
     font-weight: normal;
 }
-.board .recipes img{
+
+.board .recipes img {
     height: 150px;
     margin: 0 auto;
     margin-bottom: 10px;
@@ -276,54 +314,61 @@ width: 100%;
 
 }
 
-.wrap-about{
+.wrap-about {
     position: relative;
 }
-.board .wrap-about{
+
+.board .wrap-about {
     position: relative;
 }
-.col-sm-5{
+
+.col-sm-5 {
     width: 100%;
 }
 
-@media(min-width:768px){
-.col-sm-5{
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 41.66667%;
-    flex: 0 0 41.66667%;
-    max-width: 41.66667%;
+@media(min-width:768px) {
+    .col-sm-5 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 41.66667%;
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+
+    }
+
+
+    .col-sm-7 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 58.33333%;
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
+
+    .d-md-flex {
+        display: flex !important;
+    }
 
 }
 
+@media (max-width: 767.98px) {
+    .wrap-about {
+        padding: 0 15px !important;
+    }
 
-.col-sm-7{
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 58.33333%;
-    flex: 0 0 58.33333%;
-    max-width: 58.33333%;
-}
-.d-md-flex{
-    display: flex!important;
-}
+    .recipes .menu .img {
+        width: 100px;
 
-}
-@media (max-width: 767.98px){
-.wrap-about {
-    padding: 0 15px !important;
-}
-.recipes .menu .img{
-    width: 100px;
+    }
+
+    .menu h5 {
+        font-size: 14px;
+    }
 
 }
-.menu h5{
-    font-size: 14px;
-}
 
-}
-.advertisment{
- position: relative;
-    z-index: 1; 
- background-repeat: no-repeat;
+.advertisment {
+    position: relative;
+    z-index: 1;
+    background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 350px;
@@ -332,13 +377,14 @@ width: 100%;
     margin-top: 20px;
     overflow: hidden;
 }
-.advertisment p{
+
+.advertisment p {
     color: white;
     text-align: center;
 }
 
 
-.advertisment ::after{
+.advertisment ::after {
     position: absolute;
     top: 0;
     left: 0;
@@ -354,16 +400,17 @@ width: 100%;
 .advertisment img {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
 }
-.advertisment .row{
+
+.advertisment .row {
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
 }
 
 
-.col-md{
+.col-md {
     position: relative;
     width: 100%;
     padding-right: 15px;
@@ -371,54 +418,62 @@ width: 100%;
     justify-content: center !important;
 }
 
-.advertisment .container h1{
-color: hotpink;
-display: flex;
-align-items: center;
-justify-content: center;
-margin-top: 95px;
-font-family: 'Lugrasimo', cursive;
+.advertisment .container h1 {
+    color: hotpink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 95px;
+    font-family: 'Lugrasimo', cursive;
 }
 
 
-.posts{
+.posts {
     margin-top: 200px;
 }
-.posts h2{
+
+.posts h2 {
     color: #ff6e7f;
     border-bottom: 1px solid beige;
 }
-.posts h3{
+
+.posts h3 {
     font-weight: 400;
     font-family: 'Playfair Display SC', serif;
     font-size: 18px;
 }
-.posts p{
+
+.posts p {
     color: #999999;
-    
+
 }
-.posts p .btn{
+
+.posts p .btn {
     background-color: #ff6e7f;
 }
-.sidebar-wrap{
+
+.sidebar-wrap {
     width: 100%;
     display: block;
     background: rgba(0, 0, 0, 0.03);
 }
-.sidebar-box{
+
+.sidebar-box {
     margin-bottom: 30px;
     font-size: 15px;
     width: 100%;
 }
-.sidebar-box img{
+
+.sidebar-box img {
     width: 100%;
     height: auto;
 }
 
- .search-form {
+.search-form {
     background: #f2f2f2;
 }
-.sidebar-box .search{
+
+.sidebar-box .search {
     width: 20%;
     background-color: white;
     color: hotpink;
@@ -428,28 +483,32 @@ font-family: 'Lugrasimo', cursive;
     font-size: 12px;
 
 }
-.sidebar-box input{
- 
-  border-radius: 7px;
+
+.sidebar-box input {
+
+    border-radius: 7px;
 }
-@media(max-width:768px){
- .sidebar-box .form{
-margin-left: 50px;
- }
- .sidebar-box input{
-    width: 75%;
- }
- .sidebar-box .search{
-    font-size: 16px;
-    width: 22%;
- }
+
+@media(max-width:768px) {
+    .sidebar-box .form {
+        margin-left: 50px;
+    }
+
+    .sidebar-box input {
+        width: 75%;
+    }
+
+    .sidebar-box .search {
+        font-size: 16px;
+        width: 22%;
+    }
 }
 
 @media (max-width: 991.98px) {
     .sidebar-wrap {
         margin-top: 7em;
     }
-} 
+}
 
 
 .season-recipe .sidebar-box {
@@ -457,14 +516,16 @@ margin-left: 50px;
     font-size: 15px;
     width: 100%;
 }
+
 /* .category-image img{
     margin-top: 140px;
 } */
-.category-image img{
+.category-image img {
     height: 110%;
- 
+
 }
-.category-image h3{
+
+.category-image h3 {
     color: white;
     position: relative;
     top: -84px;
@@ -474,12 +535,14 @@ margin-left: 50px;
     font-size: 24px;
     font-weight: 900;
 }
-.season-recipe .heading h2{
+
+.season-recipe .heading h2 {
     color: #ff6e7f;
-    
-    
-    
+
+
+
 }
+
 .category-image {
     padding: 0;
     margin: 0;
@@ -521,63 +584,76 @@ margin-left: 50px;
     border-bottom: 1px solid #dee2e6;
     list-style: none;
 }
-.season-recipe h2{
+
+.season-recipe h2 {
     color: #ff6e7f;
- 
+
 
 }
-.season-recipe .blog img{
+
+.season-recipe .blog img {
     width: 100%;
     height: 500px;
 }
-.season-recipe{
+
+.season-recipe {
     margin-top: 50px;
 }
-.sidebar .sidebar-box{
+
+.sidebar .sidebar-box {
     width: 100%;
     display: block;
     background: rgba(0, 0, 0, 0.03);
 }
-.season-recipe .sidebar h2{
+
+.season-recipe .sidebar h2 {
     font-family: "Playfair Display", serif;
 }
-.season-recipe .desc{
+
+.season-recipe .desc {
     display: block;
     width: 100%;
     padding: 2em 3em 5em 3em;
     position: absolute;
 }
-.season-recipe .subheading{
+
+.season-recipe .subheading {
     color: #ffd615;
 }
-.desc h3{
+
+.desc h3 {
     width: 200px;
 }
-.desc a:hover{
-   color: beige;
+
+.desc a:hover {
+    color: beige;
 }
-.desc .button{
+
+.desc .button {
     color: black;
     border: 1px solid black;
     font-size: 25px;
     border-radius: 10px;
 
 }
-.blog .title{
+
+.blog .title {
     display: block;
     padding: 2em 3em 5em 3em;
     position: absolute;
     position: absolute;
- 
+
 }
 
-.blog .title h3{
+.blog .title h3 {
     width: 200px;
 }
- .title a:hover{
+
+.title a:hover {
     color: beige;
 }
-.blog .button{
+
+.blog .button {
     color: black;
     border: 1px solid black;
     font-size: 25px;
@@ -585,49 +661,56 @@ margin-left: 50px;
 }
 
 @media (max-width: 991px) {
-   .season-recipe img{
-    margin-top: 30px;
-   }
-   .category-image img{
-    width: 100%;
-    height: 200px;
-    margin-top: 120px;
-  
-  
-   }
-   .category-image a{
-    margin-top: 40px;
-   }
-   .category-image h3{
-    margin-top: 80px;
-    color: white;
-    position: relative;
-   }
+    .season-recipe img {
+        margin-top: 30px;
+    }
+
+    .category-image img {
+        width: 100%;
+        height: 200px;
+        margin-top: 120px;
+
+
+    }
+
+    .category-image a {
+        margin-top: 40px;
+    }
+
+    .category-image h3 {
+        margin-top: 80px;
+        color: white;
+        position: relative;
+    }
 
 }
 
 body {
     overflow-x: hidden;
-  }
-  footer{
+}
+
+footer {
     font-size: 16px;
     background: #1f1f1f;
     padding: 7em 0;
     z-index: 0;
     color: white;
     margin-top: 40px;
-  }
-  footer .social{
+}
+
+footer .social {
     margin-top: 3rem !important;
     float: left !important;
     margin-left: -33px;
-  }
-  .social li{
+}
+
+.social li {
     list-style: none;
     margin: 0 10px 0 0;
     display: inline-block;
-  }
-  .social a{
+}
+
+.social a {
     height: 50px;
     width: 50px;
     display: block;
@@ -635,40 +718,48 @@ body {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 50%;
     position: relative;
-  }
-  .social a:hover{
+}
+
+.social a:hover {
     color: #ff6e7f;
-  }
-  .social span{
+}
+
+.social span {
     position: absolute;
     font-size: 26px;
     top: 19%;
     left: 30%;
-  }
-  .information a:hover{
-color:white;
-  }
+}
 
-  .categories li{
+.information a:hover {
+    color: white;
+}
+
+.categories li {
     text-decoration: none;
-  }
-  .list a:hover{
+}
+
+.list a:hover {
     color: pink;
-  }
-  .term li{
+}
+
+.term li {
     display: table;
     line-height: 1.5;
     margin-bottom: 15px;
-  }
-  .term{
+}
+
+.term {
     margin-top: 40px;
-  }
-  .form-group{
+}
+
+.form-group {
     position: relative;
     margin-bottom: 0;
     justify-content: center;
-  }
-.form-group input{
+}
+
+.form-group input {
     height: 64px !important;
     border: 1px solid transparent;
     font-size: 20px;
@@ -676,67 +767,71 @@ color:white;
     padding: 0 20px;
 
 }
-.submit{
+
+.submit {
     color: #fff !important;
     background: #000000 !important;
     border-radius: 0px 5px 5px 0px;
     font-size: 16px;
 }
-.btn-primary{
+
+.btn-primary {
     background-color: pink;
 }
 
 
 
 
-  
-  form {
+
+form {
     display: grid;
     grid-gap: 10px;
-  }
-  
-  label {
+}
+
+label {
     font-weight: bold;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  input[type="date"],
-  input[type="time"],
-  input[type="number"],
-  textarea {
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-  }
-  
-  textarea {
+}
+
+textarea {
     resize: vertical;
-  }
-  
-  .reserve form button {
+}
+
+.reserve form button {
     width: 100%;
-    background-color:#ff6e7f;
+    background-color: #ff6e7f;
     color: #fff;
     border: none;
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
+}
 
-  .reserve img{
+button:hover {
+    background-color: #45a049;
+}
+
+.reserve img {
     width: 100%;
-  }
-  .reserve form{
+}
+
+.reserve form {
     width: 100%;
-  }
-  .reserve .subheading{
+}
+
+.reserve .subheading {
     color: #f67979;
     position: relative;
     line-height: 1;
@@ -746,16 +841,19 @@ color:white;
     font-weight: normal;
     font-size: 50px;
     display: block;
-  }
-  .reserve h2{
+}
+
+.reserve h2 {
     font-size: 28px;
     font-weight: 700;
-  }
-  .reserve{
+}
+
+.reserve {
     margin-top: 100px;
-  }
-  form button:hover{
+}
+
+form button:hover {
     background-color: beige;
     color: #ff6e7f;
-  }
+}
 
