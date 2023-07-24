@@ -264,6 +264,21 @@ a {
     width: 100%;
 }
 .head{
-    margin-top: 100px;
+    margin-top: 70px;
+}
+.call{
+    display: flex;
+    margin-top: 40px;
+}
+.call i{
+    font-size: 30px;
+    margin-top: 15px;
+    color: hotpink;
+}
+.call .content{
+    margin-left: 10px;
+}
+.content p:nth-child(1){
+    font-family: 'Playfair Display', serif;
 }
 
