@@ -192,12 +192,60 @@ a {
 }
 .title h4{
     font-family: 'Spectral', sans-serif;
+    font-size: 18px;
     
 }
 .line{
     flex-grow: 1;
     border-bottom: 1px solid hotpink;
     position: relative;
-    bottom: 21px;
+    bottom: 19px;
     width: 140px;
 }
+.advertisment {
+    position: relative;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    top: 100px;
+    background-attachment: fixed;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.advertisment p {
+    color: white;
+    text-align: center;
+}
+
+
+.advertisment ::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: '';
+    z-index: -1;
+    opacity: 0.3;
+    background: #00000080;
+}
+
+
+.advertisment img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.col-md {
+    position: relative;
+    width: 100%;
+
+    justify-content: center !important;
+}
+
