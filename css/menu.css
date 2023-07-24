@@ -245,7 +245,25 @@ a {
 .col-md {
     position: relative;
     width: 100%;
-
     justify-content: center !important;
+}
+.order{
+    margin-top: 200px;
+}
+.order h2{
+    font-family: 'Playfair Display', serif;
+}
+.text{
+    color: hotpink;
+}
+.order .desc{
+    color: #817C7B;
+    font-family: "Spectral", Sans-serif;
+}
+.orderImage img{
+    width: 100%;
+}
+.head{
+    margin-top: 100px;
 }
 
