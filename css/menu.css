@@ -172,6 +172,15 @@ a {
     text-align: center;
     margin-top: 100px;
 }
+
+.mainMenu .pxl-heading{
+    text-align: center;
+    margin-top: 100px;
+}
+.mainMenu{
+    margin-top: 200px;
+
+}
 .pxl-heading p{
     color: hotpink;
     font-family: "Spectral", Sans-serif;
