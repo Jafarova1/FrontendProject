@@ -860,3 +860,12 @@ form button:hover {
     color: #ff6e7f;
 }
 
+.category-image h3{
+    position: relative;
+    top: -111px;
+    color: white;
+}
+
+
+
+

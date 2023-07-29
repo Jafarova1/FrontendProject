@@ -326,6 +326,10 @@ color:white;
   body {
     overflow-x: hidden;
   }
-
+  .category-image h3{
+    position: relative;
+    top: -111px;
+    color: white;
+}
 
 
