@@ -175,11 +175,11 @@
                             </div>
 
                         </div>
-                        <div class="row mt-5">
+                        <!-- <div class="row mt-5">
                             <div class="nums text-center">
                                 <div class="items">
 
-                                    <ul>
+                                    <ul class="it">
                                         <li><a href=""><i class="fa-solid fa-chevron-left"></i></a></li>
                                         <li><a href="recipes.html">1</a></li>
                                         <li><a href="pagination.html">2</a></li>
@@ -194,6 +194,25 @@
 
 
 
+                                </div>
+
+                            </div>
+
+                        </div> -->
+
+                        <div class="paginate">
+                            <div class="container">
+                                <div class="pagination">
+                                    <button class="btn1" onclick="backBtn()">prev<i class="fa-solid fa-chevron-left"></i></button>
+                                    <ul>
+                                        <li class="link active" value="1" onclick="activeLink()"><a href="single.html">1</a>1</li>
+                                        <li class="link" value="2" onclick="activeLink()"><a href="pagination.html">2</a>2</li>
+                                        <li class="link" value="3" onclick="activeLink()"><a href="stories.html">3</a>3</li>
+                                        <li class="link" value="4" onclick="activeLink()"><a href="single.html">4</a>4</li>
+                                        <li class="link" value="5" onclick="activeLink()"><a href="stories.html">6</a>5</li>
+                                        <li class="link" value="6" onclick="activeLink()"><a href="stories.html">6</a>6</li>
+                                    </ul>
+                                    <button class="btn2" onclick="nextBtn()"><i class="fa-solid fa-chevron-right"></i> next </button>
                                 </div>
 
                             </div>
