@@ -1,18 +1,18 @@
-$(document).ready(function(){
-    $('#addtocart').on('click',function(){
-      
-      var button = $(this);
-      var cart = $('#cart');
-      var cartTotal = cart.attr('data-totalitems');
-      var newCartTotal = parseInt(cartTotal) + 1;
-      
-      button.addClass('sendtocart');
-      setTimeout(function(){
-        button.removeClass('sendtocart');
-        cart.addClass('shake').attr('data-totalitems', newCartTotal);
-        setTimeout(function(){
-          cart.removeClass('shake');
-        },500)
-      },1000)
-    })
+const slides = document.querySelector(".slider").children;
+const indicatorImages = document.querySelector(".slider-indicator").children;
+
+for(let i=0; i<indicatorImages.length; i++){
+  indicatorImages[i].addEventListener("click", function(){
+
+    for(let j=0; j<indicatorImages.length; j++){
+      indicatorImages[j].classList.remove("active");
+    }
+    this.classList.add("active");
+    const id=this.getAttribute("data-id");
+    for(let j=0; j<slides.length; j++){
+      slides[j].classList.remove("active");
+    }
+
+    slides[id].classList.add("active");
   })
+}
