@@ -63,6 +63,9 @@ a {
 @media(max-width:768px) {
     .hamburger {
         display: block;
+        left: 450px;
+    position: relative;
+    bottom: 560px;
 
     }
 
@@ -79,7 +82,7 @@ a {
     }
 
     .nav-menu {
-        position: fixed;
+        position: inherit;
         left: -100%;
         top: 70px;
         gap: 0;
@@ -98,6 +101,7 @@ a {
 
     .nav-menu.active {
         left: 0;
+        top: 30px;
     }
 }
 
