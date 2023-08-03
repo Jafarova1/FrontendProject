@@ -11,22 +11,9 @@
     navMenu.classList.remove("active")
   }))
 
-//   var readMoreButton = document.querySelector('.btn');
-// var readMoreContent = document.querySelector('.full-content');
-// readMoreButton.addEventListener('click', function(event) {
-//   event.preventDefault();
 
-//   if(readMoreContent.style.display==='none'){
-//     readMoreContent.style.display==='block'
-//     readMoreButton.textContent='Read Less'
-//   }
-//   else{
-//     readMoreContent.style.display==='none'
-//     readMoreButton.textContent='Read More'
 
-//   }
-  // readMoreContent.style.display = 'block';
-// });
+
 
         var readMoreLink = document.getElementById('read-more-link');
         var fullContent = document.querySelector('.full-content');
