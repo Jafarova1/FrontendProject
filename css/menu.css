@@ -669,6 +669,7 @@ body {
     clear: both;
     max-height: 0;
     transition: max-height .2s ease-out;
+    margin-right: 120px;
   }
   
   /* menu icon */
