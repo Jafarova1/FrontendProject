@@ -1041,7 +1041,9 @@ form button:hover {
   .header .menu{
     margin-top: 20px;
   }
-  
+.header .menu a:hover{
+    color: hotpink;
+}
 
   .header a:hover{
     color: black;

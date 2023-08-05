@@ -574,3 +574,6 @@ color:white;
     
     color: black;
   }
+  .header .menu a:hover{
+    color: hotpink;
+}

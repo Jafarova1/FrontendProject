@@ -108,7 +108,7 @@
                 <a href="stories.html" class="nav-link">Stories</a>
             </li>
             <li class="nav-item">
-                <a href="recipes.html" class="nav-link">Lifestyle</a>
+                <a href="recipes.html" class="nav-link">Posts</a>
             </li>
             <li class="nav-item">
                 <a href="contact.html" class="nav-link">Contact</a>
@@ -117,18 +117,41 @@
                 <a href="sign.html" class="nav-link">Sign in</a>
             </li>
         
+      
+ 
+ 
             
        
     
       
         </ul>
-        <div>
+        <!-- <div>
             <li>
-          <a href=""><img  src="./images/cart.png" height="50" width="50"  id="basketImage" onclick="clickCart()"></a>
+          <a href="basket.html"><img  src="./images/cart.png" height="50" width="50"  id="basketImage" onclick="clickCart()"></a>
                 <h2 id="itemCounter">0</h2>
                 <p id="orderTotal"></p>
             </li>
-        </div> 
+        </div>  -->
+        <div class="cart-modal-overlay">
+            <div class="cart-modal">
+              <i id="close-btn" class="fas fa-times"></i>
+                <h1 class="cart-is-empty">Cart is empty</h1>
+              
+                <div class="product-rows">
+                </div>
+                <div class="total">
+                  <h1 class="cart-total">TOTAL</h1>
+                    <span class="total-price">$0</span>
+                      <button class="purchase-btn">PURCHASE</button>
+                </div>
+              </div>
+        </div>
+              
+    
+          <div class="cart-btn">
+            <i id="cart" class="fas fa-shopping-cart"></i>
+              <span class ="cart-quantity">0</span>
+          </div>
       
       </header>
 
@@ -169,6 +192,110 @@
             </div>
         </section>
         <section>
+       
+            <!-- Start DEMO HTML (Use the following code into your project)-->
+       <!-- <div class="cart-modal-overlay">
+           <div class="cart-modal">
+             <i id="close-btn" class="fas fa-times"></i>
+               <h1 class="cart-is-empty">Cart is empty</h1>
+             
+               <div class="product-rows">
+               </div>
+               <div class="total">
+                 <h1 class="cart-total">TOTAL</h1>
+                   <span class="total-price">$0</span>
+                     <button class="purchase-btn">PURCHASE</button>
+               </div>
+             </div>
+       </div>
+             
+
+         <div class="cart-btn">
+           <i id="cart" class="fas fa-shopping-cart"></i>
+             <span class ="cart-quantity">0</span>
+         </div> -->
+
+         <div class="items-container">
+           <div class="card-1 card">
+             <img class="product-image" src="./images/blog-4.jpg" alt="">
+               <button class="add-to-cart">Add to cart</button>
+                  <span>Citrus Lemonade</span>
+                 <span class="product-price">$20</span>
+           </div>
+           <div class="card-2 card">
+             <img class="product-image" src="./images/blog-5.jpg" alt="">
+             <button class="add-to-cart">Add to cart</button>
+             <span>Chicken Avocado Soup
+            </span>
+               <span class="product-price">$110</span>
+           </div>
+           <div class="card-3 card">
+             <img class="product-image" src="./images/blog-6.jpg" alt="">
+               <button class="add-to-cart">Add to cart</button>
+               <span>
+                One-Pot Beef with Broccoli</span>
+                 <span class="product-price">$120</span>
+           </div>
+           <div class="card-4 card">
+             <img class="product-image" src="./images/blog-7.jpg" alt="">
+                <button class="add-to-cart">Add to cart</button>
+                <span>
+                    Grilled Cheese Crostini</span>
+               <span class="product-price">$80</span>
+           </div>
+           <div class="card-5 card">
+             <img class="product-image" src="./images/blog-8.jpg" alt="">
+             <button class="add-to-cart">Add to cart</button>
+             <span>Chicken Avocado Sandwitch</span>
+             <span class="product-price">$65</span>
+           </div>
+           
+     
+          
+         </div>  
+         <div class="items-container">
+            <div class="card-1 card">
+              <img class="product-image" src="./images/food1.jpg" alt="">
+                <button class="add-to-cart">Add to cart</button>
+                   <span>Grilled Cheese Crostini</span>
+                  <span class="product-price">$100</span>
+            </div>
+            <div class="card-2 card">
+              <img class="product-image" src="./images/food2.jpg" alt="">
+              <button class="add-to-cart">Add to cart</button>
+              <span>Spaghetti carbonara
+             </span>
+                <span class="product-price">$117</span>
+            </div>
+            <div class="card-3 card">
+              <img class="product-image" src="./images/food3.jpg" alt="">
+                <button class="add-to-cart">Add to cart</button>
+                <span>Beer-Cheeseburger</span>
+                  <span class="product-price">$95</span>
+            </div>
+            <div class="card-4 card">
+              <img class="product-image" src="./images/food4.jpg" alt="">
+                 <button class="add-to-cart">Add to cart</button>
+                 <span>
+                    Perfect Scrambled Eggs
+                  </span>
+                <span class="product-price">$83</span>
+            </div>
+            <div class="card-5 card">
+              <img class="product-image" src="./images/food5.jpg" alt="">
+              <button class="add-to-cart">Add to cart</button>
+              <span>
+                Perfect Scrambled Eggs
+                </span>
+              <span class="product-price">$79</span>
+            </div>
+      
+           
+          </div>  
+
+      
+        </section>
+        <!-- <section>
             <div class="container">
                 <div class="row">
                     <div class="col-sm">
@@ -192,6 +319,7 @@
                                 <div class="about">
                                     <p>Type of sandwich made with chicken and avocado.</p>
                                     <button class="btn " onclick="addToCart(mi)">Add To Cart</button>	
+                                
                                     
                                 </div>
 
@@ -388,7 +516,7 @@
                         </div>
                     </div>
                 </div>
-        </section>
+        </section> -->
 
 
 
@@ -414,215 +542,82 @@
             </div>
         </section>
         <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm">
-                        <div class="menu-item">
-                            <div class="pxl-item-img">
-                                <img src="./images/desert1.jpg" alt="">
-
-                            </div>
-                            <div class="pxl-item-desc">
-                                <div class="title">
-                                    <h4>Chocolate Cake</h4>
-                                    <span class="line"></span>
-                                    <span class="price">80$</span>
-
-
-                                </div>
-                                <div class="about">
-                                    <p>Type of sandwich made with chicken and avocado.</p>
-                                    <button class="btn " onclick="addToCart(mi)">Add To Cart</button>	
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <div class="pxl-item-img">
-                                <img src="./images/desert2.jpg" alt="">
-
-                            </div>
-                            <div class="pxl-item-desc">
-                                <div class="title">
-                                    <h4>Cherry Cream Pie</h4>
-                                    <span class="line"></span>
-                                    <span class="price">155$</span>
-
-
-                                </div>
-                                <div class="about">
-                                    <p>Type of sandwich made with chicken and avocado.</p>
-                                    <button class="btn " onclick="addToCart(mi)">Add To Cart</button>	
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <div class="pxl-item-img">
-                                <img src="./images/desert3.jpg" alt="">
-
-                            </div>
-                            <div class="pxl-item-desc">
-                                <div class="title">
-                                    <h4>Choco Pudding</h4>
-                                    <span class="line"></span>
-                                    <span class="price">130$</span>
-
-
-                                </div>
-                                <div class="about">
-                                    <p>Type of sandwich made with chicken and avocado.</p>
-                                    <button class="btn " onclick="addToCart(mi)">Add To Cart</button>	
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <div class="pxl-item-img">
-                                <img src="./images/desert4.jpg" alt="">
-
-                            </div>
-                            <div class="pxl-item-desc">
-                                <div class="title">
-                                    <h4>Cream Filled Choco Cake</h4>
-                                    <span class="line"></span>
-                                    <span class="price">120$</span>
-
-
-                                </div>
-                                <div class="about">
-                                    <p>Type of sandwich made with chicken and avocado.</p>
-                                    <button class="btn " onclick="addToCart(mi)">Add To Cart</button>	
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <div class="pxl-item-img">
-                                <img src="./images/desert5.jpg" alt="">
-
-                            </div>
-                            <div class="pxl-item-desc">
-                                <div class="title">
-                                    <h4>Socola Que</h4>
-                                    <span class="line"></span>
-                                    <span class="price">600$</span>
-
-
-                                </div>
-                                <div class="about">
-                                    <p>Type of sandwich made with chicken and avocado.</p>
-                                    <button class="btn " onclick="addToCart(mi)">Add To Cart</button>	
-                                </div>
-
-                            </div>
-                        </div>
-
-
-                    </div>
-                    <div class="col-sm">
-                        <div class="menu-item">
-                            <div class="pxl-item-img">
-                                <img src="./images/desert6.jpg" alt="">
-
-                            </div>
-                            <div class="pxl-item-desc">
-                                <div class="title">
-                                    <h4>Orange Pancake</h4>
-                                    <span class="line"></span>
-                                    <span class="price">135$</span>
-
-
-                                </div>
-                                <div class="about">
-                                    <p>Type of sandwich made with chicken and avocado.</p>
-                                    <button class="btn " onclick="addToCart(mi)">Add To Cart</button>	
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <div class="pxl-item-img">
-                                <img src="./images/desert7.jpg" alt="">
-
-                            </div>
-                            <div class="pxl-item-desc">
-                                <div class="title">
-                                    <h4>Dark Chocolate</h4>
-                                    <span class="line"></span>
-                                    <span class="price">200$</span>
-
-
-                                </div>
-                                <div class="about">
-                                    <p>Type of sandwich made with chicken and avocado.</p>
-                                    <button class="btn " onclick="addToCart(mi)">Add To Cart</button>	
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <div class="pxl-item-img">
-                                <img src="./images/desert8.jpg" alt="">
-
-                            </div>
-                            <div class="pxl-item-desc">
-                                <div class="title">
-                                    <h4> Cholate chips Pancake</h4>
-                                    <span class="line"></span>
-                                    <span class="price">220$</span>
-
-
-                                </div>
-                                <div class="about">
-                                    <p>Type of sandwich made with chicken and avocado.</p>
-                                    <button class="btn " onclick="addToCart(mi)">Add To Cart</button>	
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <div class="pxl-item-img">
-                                <img src="./images/desert9.jpg" alt="">
-
-                            </div>
-                            <div class="pxl-item-desc">
-                                <div class="title">
-                                    <h4>Cream Filled Chocolate</h4>
-                                    <span class="line"></span>
-                                    <span class="price">100$</span>
-
-
-                                </div>
-                                <div class="about">
-                                    <p>Type of sandwich made with chicken and avocado.</p>
-                                    <button class="btn " onclick="addToCart(mi)">Add To Cart</button>	
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <div class="pxl-item-img">
-                                <img src="./images/desert10.jpg" alt="">
-
-                            </div>
-                            <div class="pxl-item-desc">
-                                <div class="title">
-                                    <h4>Chicken Avocado Sandwitch</h4>
-                                    <span class="line"></span>
-                                    <span class="price">85$</span>
-
-
-                                </div>
-                                <div class="about">
-                                    <p>Type of sandwich made with chicken and avocado.</p>
-                                    <button class="btn " onclick="addToCart(mi)">Add To Cart</button>	
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
+              <div class="items-container">
+                <div class="card-1 card">
+                  <img class="product-image" src="./images/desert1.jpg" alt="">
+                    <button class="add-to-cart">Add to cart</button>
+                       <span>Citrus Lemonade</span>
+                      <span class="product-price">$20</span>
                 </div>
+                <div class="card-2 card">
+                  <img class="product-image" src="./images/desert2.jpg"alt="">
+                  <button class="add-to-cart">Add to cart</button>
+                  <span>Chicken Avocado Soup
+                 </span>
+                    <span class="product-price">$110</span>
+                </div>
+                <div class="card-3 card">
+                  <img class="product-image" src="./images/desert3.jpg" alt="">
+                    <button class="add-to-cart">Add to cart</button>
+                    <span>
+                     One-Pot Beef with Broccoli</span>
+                      <span class="product-price">$120</span>
+                </div>
+                <div class="card-4 card">
+                  <img class="product-image" src="./images/desert4.jpg" alt="">
+                     <button class="add-to-cart">Add to cart</button>
+                     <span>
+                         Grilled Cheese Crostini</span>
+                    <span class="product-price">$80</span>
+                </div>
+                <div class="card-5 card">
+                  <img class="product-image" src="./images/desert5.jpg" alt="">
+                  <button class="add-to-cart">Add to cart</button>
+                  <span>Chicken Avocado Sandwitch</span>
+                  <span class="product-price">$65</span>
+                </div>
+          
+               
+              </div>  
+              <div class="items-container">
+                 <div class="card-1 card">
+                   <img class="product-image" src="./images/desert6.jpg" alt="">
+                     <button class="add-to-cart">Add to cart</button>
+                        <span>Grilled Cheese Crostini</span>
+                       <span class="product-price">$100</span>
+                 </div>
+                 <div class="card-2 card">
+                   <img class="product-image" src="./images/desert7.jpg" alt="">
+                   <button class="add-to-cart">Add to cart</button>
+                   <span>Spaghetti carbonara
+                  </span>
+                     <span class="product-price">$117</span>
+                 </div>
+                 <div class="card-3 card">
+                   <img class="product-image" src="./images/desert8.jpg" alt="">
+                     <button class="add-to-cart">Add to cart</button>
+                     <span>Beer-Cheeseburger</span>
+                       <span class="product-price">$95</span>
+                 </div>
+                 <div class="card-4 card">
+                   <img class="product-image" src="./images/desert9.jpg" alt="">
+                      <button class="add-to-cart">Add to cart</button>
+                      <span>
+                         Perfect Scrambled Eggs
+                       </span>
+                     <span class="product-price">$83</span>
+                 </div>
+                 <div class="card-5 card">
+                   <img class="product-image" src="./images/desert10.jpg" alt="">
+                   <button class="add-to-cart">Add to cart</button>
+                   <span>
+                     Perfect Scrambled Eggs
+                     </span>
+                   <span class="product-price">$79</span>
+                 </div>
+           
+                
+               </div> 
         </section>
         
         <section class="advertisment" id="section-counter" style="background-image: url(images/sweetimage.jpg);
@@ -852,6 +847,7 @@
     <script src="./js/testimonial.js"></script>
     <script src="./js/cart.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/basket.js"></script>
 
 
 

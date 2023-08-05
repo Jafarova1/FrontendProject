@@ -662,3 +662,6 @@ i{
     
     color: black;
   }
+  .header .menu a:hover{
+    color: hotpink;
+}

@@ -727,3 +727,6 @@ margin-left: 50px;
     
     color: black;
   }
+  .header .menu a:hover{
+    color: hotpink;
+}

@@ -15,20 +15,20 @@
 
 
 
-        var readMoreLink = document.getElementById('read-more-link');
-        var fullContent = document.querySelector('.full-content');
+        // var readMoreLink = document.getElementById('read-more-link');
+        // var fullContent = document.querySelector('.full-content');
 
-        readMoreLink.addEventListener('click', function (event) {
-            event.preventDefault();
+        // readMoreLink.addEventListener('click', function (event) {
+        //     event.preventDefault();
 
-            if (fullContent.style.display === 'none') {
-                fullContent.style.display = 'block';
-                readMoreLink.textContent = 'Read Less';
-            } else {
-                fullContent.style.display = 'none';
-                readMoreLink.textContent = 'Read More';
-            }
-        });
+        //     if (fullContent.style.display === 'none') {
+        //         fullContent.style.display = 'block';
+        //         readMoreLink.textContent = 'Read Less';
+        //     } else {
+        //         fullContent.style.display = 'none';
+        //         readMoreLink.textContent = 'Read More';
+        //     }
+        // });
 
 
 

@@ -551,6 +551,9 @@ i{
     color: black;
 
   }
+  .header .menu a:hover{
+    color: hotpink;
+}
   .header a{
     
     color: black;
