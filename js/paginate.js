@@ -33,7 +33,7 @@ function backBtn(){
 }
 
 function nextBtn(){
-  if(currentValue<6){
+  if(currentValue<3){
     for(l of link){
       l.classList.remove("active");
   }
